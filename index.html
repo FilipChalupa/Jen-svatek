@@ -161,10 +161,10 @@
 			/* @TODO: prevent flash of content on load */
 
 			const showTomorrow =
-				new URLSearchParams(window.location.search).get('tomorrow') !== null
+				new URLSearchParams(window.location.search).get('zitra') !== null
 			const showYesterday =
 				!showTomorrow &&
-				new URLSearchParams(window.location.search).get('yesterday') !== null
+				new URLSearchParams(window.location.search).get('vcera') !== null
 
 			const target = (() => {
 				const targetDate = new Date()
